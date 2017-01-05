@@ -1,0 +1,27 @@
+{
+  "name": "form-responder",
+  "version": "1.0.0",
+  "description": "A simple server that listens for form requests and returns some equivalent to the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedsmithobd/form-responder.git"
+  },
+  "keywords": [
+    "form",
+    "html"
+  ],
+  "author": "Jedediah Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jedsmithobd/form-responder/issues"
+  },
+  "homepage": "https://github.com/jedsmithobd/form-responder#readme",
+  "dependencies": {
+    "formidable": "^1.0.17"
+  }
+}

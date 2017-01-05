@@ -30,7 +30,7 @@ var fieldsToHtmlIfKeys = function (fields) {
         borderStyle = `border: 5px ${fields['border-style'] || 'inset'} ${fields.color};`;
     }
     if (fields.name) {
-        var tag = field.tag || 'h1';
+        var tag = fields.tag || 'h1';
         text += `<${tag}>${fields.name}</${tag}>`;
     }
     if (fields.color) {

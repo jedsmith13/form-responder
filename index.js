@@ -27,17 +27,17 @@ var fieldsToHtmlIfKeys = function (fields) {
 
     if (fields.color) {
         text += `<div style="color:${fields.color};">`;
-        borderStyle = `border: 5px dotted ${fields.color};`;
+        borderStyle = `border: 5px ${fields['border-style'] || 'inset'} ${fields.color};`;
     }
     if (fields.name) {
-        text += `<div>${fields.name}</div>`;
+        text += `<h1>${fields.name}</h1>`;
     }
     if (fields.color) {
         text += '</div>';
     }
 
     if (fields.image) {
-        text += `<br /><div style="width:33%; ${borderStyle}"><img src=${fields.image} /></div><br /><br /><br />`;
+        text += `<br /><div><img src=${fields.image} style="width:33%; ${borderStyle}"/></div><br /><br /><br />`;
     }
 
     return text;

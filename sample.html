@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <form action="http://localhost:3000" method="post">
+    <form action="http://form195.herokuapp.com/" method="post">
         <fieldset>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" />
@@ -15,6 +15,15 @@
             <label for="image">Image URL:</label>
             <textarea id="image" name="image" placeholder="Enter the URL to your image"></textarea>
             <br />
+            <label for="border-style">Border Style</label>
+            <select id="border-style" name="border-style">
+                <option value="solid" selected>Solid</option>
+                <option value="dotted">Dotted</option>
+                <option value="dashed">Dashed</option>
+                <option value="inset">Inset</option>
+                <option value="outset">Outset</option>
+                <option value="none">None</option>
+            </select>
             <input type="submit" value="Send to server" />
         </fieldset>
     </form>

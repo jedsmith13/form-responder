@@ -12,10 +12,10 @@ var processAllFieldsOfTheForm = function (req, res) {
         });
         var text = fieldsToHtmlIfKeys(fields);
         res.write(text);
-        res.end(util.inspect({
+        res.end(`<pre>${util.inspect({
             fields: fields,
             files: files
-        }));
+        })}</pre>`);
     });
 };
 
